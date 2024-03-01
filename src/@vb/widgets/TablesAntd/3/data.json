@@ -1,0 +1,21 @@
+[
+  {
+    "key": "1",
+    "holiday": "Year End Holidays",
+    "date": "12/11/022",
+    "address": "New York No. 1 Lake Park",
+    "day": "friday"
+  },
+  {
+    "key": "2",
+    "holiday": "Year End Holidays",
+    "date": "31/12/2022",
+    "day": "monday"
+  },
+  {
+    "key": "3",
+    "holiday": "Year End Holidays",
+    "date": "31/12/2022",
+    "day": "sunday"
+  }
+]

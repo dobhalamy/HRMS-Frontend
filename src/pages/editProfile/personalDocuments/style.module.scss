@@ -1,0 +1,7 @@
+//  :global(.ant-table-row:hover){
+//     background: unset !important;
+// }
+
+.custom-row-class:hover {
+  background-color: transparent !important; /* Remove hover background */
+}

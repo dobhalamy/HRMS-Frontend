@@ -1,0 +1,10 @@
+.attenScroll {
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    -webkit-border-radius: 1ex;
+  }
+}

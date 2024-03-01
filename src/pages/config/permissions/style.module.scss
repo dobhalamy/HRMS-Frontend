@@ -1,0 +1,18 @@
+@import 'mixins.scss';
+
+.moduleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 4rem 0;
+}
+.dropDownContainer {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.moduleHeading {
+  margin-bottom: 2rem;
+}

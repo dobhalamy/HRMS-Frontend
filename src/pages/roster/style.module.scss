@@ -1,0 +1,18 @@
+.shifttTimingsContainer {
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.shiftTimings {
+  display: flex;
+}
+
+.shiftTiming {
+  margin-right: 20px;
+}
+
+/* Hide scrollbar in WebKit-based browsers (Chrome, Safari) */
+.shifttTimingsContainer::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,12 @@
+.empImageContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > div > div {
+    border-radius: 50%;
+  }
+}
+.empTextContainer {
+  text-align: center;
+}

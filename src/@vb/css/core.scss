@@ -1,0 +1,165 @@
+@import 'mixins.scss';
+
+:root {
+  --vb-color-primary: #4b7cf3;
+}
+
+html {
+  font-size: 14px;
+  @media (max-width: $sm-max-width) {
+    font-size: 13px;
+  }
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $base-font;
+  color: $text;
+  overflow-x: hidden !important;
+  position: relative;
+  font-variant: normal;
+  font-feature-settings: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  @include transition-color();
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+input {
+  outline: none !important;
+  font-family: $base-font;
+  color: $text;
+}
+
+button,
+input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  appearance: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+
+svg {
+  vertical-align: initial;
+  overflow: auto;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+::placeholder {
+  color: $gray-2;
+}
+
+// dark theme
+[data-vb-theme='dark'] {
+  body {
+    background: $dark-gray-5;
+    color: $dark-gray-1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-gray-1;
+  }
+
+  a {
+    color: $dark-gray-1;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  ::placeholder {
+    color: $dark-gray-3;
+  }
+}
+.ant-pagination .ant-pagination-options {
+  position: absolute;
+  left: 0;
+  margin-left: 16px;
+}
+.ant-pagination .ant-pagination-total-text {
+  margin-right: 16px;
+}
+
+.ant-pagination-options-size-changer.ant-select {
+  display: flex !important;
+  align-items: center !important;
+}
+.ant-pagination-options-size-changer::before {
+  content: attr(data-content) '  ';
+  content: 'Item per page: ';
+  display: flex;
+  align-self: center;
+  white-space: nowrap;
+  margin-right: 10px !important;
+}
+/* stylelint-disable length-zero-no-unit */
+.legend {
+  list-style: none;
+  margin: 16px 2px;
+  padding: 0px;
+}
+.legend li {
+  float: left;
+  margin-right: 10px;
+}
+.legend span {
+  border: 1px solid #ccc;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 3px;
+}
+.legend .approved {
+  background-color: rgb(23, 97, 2);
+}
+.legend .rejected {
+  background-color: #ff0e0e;
+}
+.legend .pending {
+  background-color: rgb(240, 164, 0);
+}
+.legend .events {
+  background-color: #03aeff;
+}
+.ant-picker {
+  width: 100%;
+}
+.certificateStatus .ant-select-selector {
+  height: 39px !important;
+  padding: 5px 10px !important;
+}

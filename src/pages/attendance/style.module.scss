@@ -1,0 +1,36 @@
+.attenScroll {
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    -webkit-border-radius: 1px;
+  }
+}
+body > iframe {
+  pointer-events: none;
+}
+.tableCell {
+  cursor: pointer;
+}
+.EmpModal_Heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.EmpModal_table {
+  width: 100%;
+  text-align: center;
+}
+.viewButton {
+  border: none;
+  background: none;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.singleEmployee {
+  margin-bottom: 0;
+}
